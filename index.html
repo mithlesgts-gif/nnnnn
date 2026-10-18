@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHILP BIM Solutions Pvt. Ltd. | Building Better with BIM. Delivering with Precision.</title>
+    <meta name="description" content="SHILP BIM Solutions Pvt. Ltd. — Integrated BIM solutions designed to improve coordination, visualization, and collaboration throughout the building lifecycle. Jamshedpur, India." />
+    <meta property="og:title" content="SHILP BIM Solutions Pvt. Ltd. | Building Better with BIM. Delivering with Precision." />
+    <meta property="og:description" content="Integrated BIM solutions designed to improve coordination, visualization, and collaboration throughout the building lifecycle." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "SHILP BIM Solutions Pvt. Ltd.",
+        "description": "Building Better with BIM. Delivering with Precision. Integrated BIM solutions, 3D/4D/5D modeling, clash detection, and digital twins.",
+        "email": "info@shilpbimsolutions.com",
+        "telephone": "+919373381310",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Jamshedpur",
+          "addressRegion": "Jharkhand",
+          "addressCountry": "IN"
+        },
+        "areaServed": "Global"
+      }
+    </script>
+    <style>
+      /* Suppress Netlify Injected Badge and Collaborative Drawer */
+      #netlify-feedback-root,
+      [data-netlify-deploy-preview-badge],
+      #netlify-deploy-preview-badge,
+      .netlify-badge,
+      iframe[src*="netlify"],
+      iframe[id*="netlify"],
+      iframe[title*="Netlify" i],
+      iframe[aria-label*="Netlify" i],
+      div[class*="netlify-badge" i],
+      div[id*="netlify" i],
+      div[class*="netlify-drawer" i],
+      div[id*="netlify-drawer" i],
+      div[data-netlify],
+      a[href*="netlify.com"][class*="badge" i] {
+        display: none !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
+        opacity: 0 !important;
+        width: 0 !important;
+        height: 0 !important;
+        max-width: 0 !important;
+        max-height: 0 !important;
+        position: absolute !important;
+        z-index: -9999 !important;
+      }
+    </style>
+    <script>
+      (function() {
+        const removeNetlifyBadge = () => {
+          const selectors = [
+            '#netlify-feedback-root',
+            '[data-netlify-deploy-preview-badge]',
+            '#netlify-deploy-preview-badge',
+            '.netlify-badge',
+            'iframe[src*="netlify"]',
+            'iframe[id*="netlify"]',
+            'iframe[title*="Netlify" i]',
+            'iframe[aria-label*="Netlify" i]',
+            'div[class*="netlify-badge" i]',
+            'div[id*="netlify" i]',
+            'div[class*="netlify-drawer" i]',
+            'div[id*="netlify-drawer" i]',
+            'div[data-netlify]',
+            'a[href*="netlify.com"][class*="badge" i]'
+          ];
+          selectors.forEach(sel => {
+            document.querySelectorAll(sel).forEach(el => {
+              try {
+                el.style.setProperty('display', 'none', 'important');
+                el.remove();
+              } catch (_) {}
+            });
+          });
+        };
+
+        if (typeof window !== 'undefined') {
+          // Run immediately
+          removeNetlifyBadge();
+          // Watch for late edge-injected elements
+          const observer = new MutationObserver(() => removeNetlifyBadge());
+          if (document.documentElement) {
+            observer.observe(document.documentElement, { childList: true, subtree: true });
+          }
+          window.addEventListener('DOMContentLoaded', removeNetlifyBadge);
+          window.addEventListener('load', removeNetlifyBadge);
+        }
+      })();
+    </script>
+  </head>
+  <body class="bg-white text-slate-900 antialiased selection:bg-blue-600/15 selection:text-blue-700">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
